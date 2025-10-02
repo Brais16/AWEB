@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="utf-8">
+    <title>Wireframe 2 - Carret de Compra</title>
+    <link rel="stylesheet" href="./styles5.2.css">
+</head>
+<body>
+    <header>
+        <img src="../assets/img/logoex5.png" alt="Logo web" width="100px">
+        <input type="search" placeholder="Cerca...">
+        <a>Home</a>
+        <a>About</a>
+        <a>Shop</a>
+        <a>Help</a>
+        <a id="cart-button">Your Cart</a>
+    </header>
+
+    <nav id="steps">
+        <p>1. Shopping Cart</p>
+        <p>2. Shipping Details</p>
+        <p>3. Payment Options</p>
+    </nav>
+
+    <main>
+        <section id="shopping-cart">
+            <h2>Shopping Cart</h2>
+            <article class="cart-item">
+                <div class="product-image"></div>
+                <div class="product-info">
+                    <p>PRODUCT NAME</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>$300</p>
+                </div>
+                <div class="quantity">
+                    <input type="number" value="2">
+                </div>
+            </article>
+            <article class="cart-item">
+                <div class="product-image"></div>
+                <div class="product-info">
+                    <p>PRODUCT NAME</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>$200</p>
+                </div>
+                <div class="quantity">
+                    <input type="number" value="1">
+                </div>
+            </article>
+            <div class="buttons">
+                <button id="next">Next</button>
+                <button id="cancel">Cancel</button>
+            </div>
+        </section>
+
+        <aside id="summary">
+            <h2>Summary</h2>
+            <p>SUBTOTAL: $600</p>
+            <p>SHIPPING: FREE</p>
+            <p>TAXES: $13</p>
+            <h3>TOTAL: $613</h3>
+        </aside>
+    </main>
+</body>
+</html>

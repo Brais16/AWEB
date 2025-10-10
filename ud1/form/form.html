@@ -1,0 +1,92 @@
+<!DOCTYPE html> <!-- Apunts form-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARI</title>
+</head>
+<body>
+	<header>
+		<h1>Registre</h1>
+   </header>
+   
+   <main>
+	   <form action="" method="get"> <!-- get per obtenir les dades per si s'han d'enviar al servidor (php) o altres-->
+		   <p>
+		  <label for="inputnom">Nom</label>   <!-- for fará que quan clickis la etiqueta (label) es dirigeixi directament a imput ja que es linka for (label) amb id (input) -->
+		  <input type="text" name="nom" id="inputnom" placeholder="Nom" required minlength="3" maxlength="10" autocomplete="off" autofocus> <!-- placeholder perque surti text a sa casella input, required perque si o si s'hagi d'escriure qualque cosa, min/maxlenght llargada minima/màxima -->
+		  </p>
+		  
+		  <p>
+		  <label for="inputema">Email
+		  <input type="email" name="email" id="inputema" placeholder="email" required>
+		  </label>
+		  </p>
+		  
+		  <p>
+		  <label for="inputedat">Edat</label>
+		  <input type="number" name="edat" id="inputedat" required min="18" max="99" >
+		  </p>
+		  
+		  <p>
+		  <label for="inputpass">Contrasenya</label>
+		  <input type="password" name="contrasenya" id="inputpass" placeholder="Entri la seva contrasenya" required>
+		  </p>
+		  
+		  <p>
+		  <input type="checkbox" name="condicions" id="inputcondicions" checked disabled>
+		  <label for="inputcondicions">Accept les condicions...</label>
+		  </p>
+		  
+		  <p>
+			<input type="date">
+		  </p>
+
+		  <p>
+		  <label for="inputassig">Assignatura</label>
+			<select name="assignatura" id="inputassig">
+					<option value="">Tria assignatura</option>
+					<option value="aweb">Aplicacions WEB</option>
+					<option value="si">Seguretat Informàtica</option>
+					<option value="sx">Serveis en Xarxa</option>
+			</select>
+		  </p>
+
+		   <p>
+		  <label for="inputpais">País</label>
+		  <input list="paisos" name="pais" id="inputpais">
+		  <datalist id="paisos">
+				<option value="Espanya">Espanya</option>
+				<option value="Portugal">Portugal</option>
+				<option value="França">França</option>
+		  </datalist>
+
+		  </p>
+
+		  <p>
+			<label for="inputcoment">Comentari</label>
+			<p>
+
+			</p>
+			<textarea name="Cometnari" id="inputcoment" placeholder="comenta..." cols="60" rows="5"></textarea>
+		  </p>
+
+		  <div>
+			<p>Gènere</p> <!--Si tenen el mateix nom només deixa seleccionar 1-->
+			<input type="radio" name="genere" id="inputhome" value="home">
+			<label for="">Home</label>
+			<input type="radio" name="genere" id="inputdona" value="dona">
+			<label for="">Dona</label>
+			<input type="radio" name="genere" id="inputaltres" value="altres">
+			<label for="">Altres</label>
+		  </div>
+		  
+		  
+		  <p>
+			<input type="submit" value="Enviar"> <!--Input per enviar les dades-->
+		  </p>
+		  
+		</form>
+	</main>
+</body>
+</html>

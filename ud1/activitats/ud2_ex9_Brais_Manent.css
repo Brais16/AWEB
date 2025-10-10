@@ -1,0 +1,32 @@
+.red{
+    color: red;
+}
+
+textarea{
+    resize: none;
+}
+
+h1{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+legend{
+    color: #4A90E2;
+}
+
+body{
+    background-color: #F4F6F8;
+}
+header{
+    color: #2B3A67;
+}
+
+fieldset{
+    border-color: #9AA0A6;
+}
+
+::placeholder{
+    color: #4A90E2;
+}

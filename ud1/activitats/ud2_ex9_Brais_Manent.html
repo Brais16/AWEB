@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulari d'inscripció a la cursa de Maó</title>
     <link rel="stylesheet" href="./ud2_ex9_Brais_Manent.css">
    
 </head>
@@ -14,7 +14,7 @@
         <h1>Formulari d'inscripció a la cursa de Maó</h1>
     </header>
     
-     <form action="" method="get">
+     <form action="#" method="get" autocomplete="off">
     <fieldset>
         <legend>DADES DE LA PERSONA PARTICIPANT</legend>
         <p>
@@ -22,23 +22,23 @@
 		  <input type="text" name="nom" id="inputnom" required minlength="2" maxlength="30">
 		  </p>
          <p>
-		  <label for="cognom1" >Primer cognom<label class="red" >*</label></label>
-		  <input type="text" name="primer cognom" id="cognom1" required maxlength="50">
+		  <label for="cognom1" >Primer cognom <label class="red">*</label> </label>
+		  <input type="text" name="primer cognom" id="cognom1" required minlength="2" maxlength="50">
 		  </p>
 		  
 		   <p>
-		  <label for="cognom2" >Segon cognom</label>
-		  <input type="text" name="segon cognom" id="cognom2"maxlength="50">
+		  <label for="cognom2" >Segon cognom <label class="red">*</label></label>
+		  <input type="text" name="segon cognom" id="cognom2"maxlength="50" required>
 		  </p>
 
           <p>
 		  <label for="DNI" >DNI <label class="red">*</label></label>
-		  <input type="text" name="DNI" id="DNI"maxlength="9" required>
+		  <input type="text" name="DNI" id="DNI" maxlength="9" required>
 		  </p>
 
           <p>
 		  <label for="telf" >Telèfon <label class="red">*</label></label>
-		  <input type="tel" name="Telefon" id="telf" maxlength="100" required>
+		  <input type="tel" name="Telefon" id="telf" maxlength="100" required autocomplete="off">
 		  </p>
 
           <p>
@@ -57,8 +57,9 @@
 		  </p>
 
           <p>
-		  <label for="inputtipus">Tipus de via</label>
-			<select name="vies" id="inputtipus">
+			<label for="adcarrer" > Adreça <label class="red">*</label></label>
+		
+			<select name="vies" id="inputtipus" required>
 					<option value="">Tria via</option>
 					<option value="carrer">Carrer</option>
 					<option value="avinguda">Avinguda</option>
@@ -68,7 +69,6 @@
                     <option value="rambla">Rambla</option>
                     <option value="cami">Camí</option>
 			</select>
-          <label for="adcarrer" > Adreça </label>
 		  <input type="text" name="Adreça carrer" id="adcarrer" required>
           <label for="numporta" >Nº </label>
 		  <input type="number" name="Numero porta" id="numporta" required>
@@ -76,7 +76,7 @@
 
           <p>
 		  <label for="inputppoblacio">Població <label class="red">*</label></label>
-		  <input list="poblacio" name="poblacio" id="inputppoblacio">
+		  <input list="poblacio" name="poblacio" id="inputppoblacio" required>
 		  <datalist id="poblacio">
 				<option value="Maó">Maó</option>
 				<option value="Es castell">Es castell</option>
@@ -91,7 +91,7 @@
           
           <p>
             <label for="codipostal" >Codi postal: </label>
-		  <input type="number" name="Codi Postal" id="codipostal" required max="52999" min="01000">
+		  <input type="number" name="Codi Postal" id="codipostal" max="52999" min="01000">
 		  
           </p>
 
@@ -131,7 +131,7 @@
 		  <label for="inputcoment">Comentaris: </label>
 		  </p>
 		  <p>
-		  		  <textarea name="comentaris" id="inputcoment" maxlength="200" placeholder="Fes qualque comentari..." cols="40" rows="5" ></textarea>
+		  		  <textarea name="comentaris" id="inputcoment" maxlength="200" placeholder="Fes qualque comentari..." cols="50" rows="6" ></textarea>
 		  </p>
 
         </fieldset>

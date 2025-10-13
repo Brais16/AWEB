@@ -18,6 +18,10 @@ legend{
 
 body{
     background-color: #F4F6F8;
+    label{
+        color: #2B3A67;
+        font-weight: bold;
+    }
 }
 header{
     color: #2B3A67;
@@ -30,3 +34,4 @@ fieldset{
 ::placeholder{
     color: #4A90E2;
 }
+

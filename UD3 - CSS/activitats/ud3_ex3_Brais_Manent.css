@@ -1,0 +1,86 @@
+:root{
+
+    /* Paleta */
+    --colorgris-color: #d3d0cb ;
+    --verdoscur-color: #1e2019;
+    --grocdaurat-color:  #E2C044;
+    --daurattrans-color: #E2C044D8;
+    --grisos-color: #587b7f;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--colorgris-color);
+    text-align: center;
+    padding: 10px; 
+}
+
+header img {
+    width: 150px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--verdoscur-color);
+}
+a:hover{
+    color: var(--verdoscur-color);
+    font-weight: bold;
+}
+
+body{
+    background-color: var(--verdoscur-color);
+    text-align: center;
+}
+
+
+h1, label, h3{
+    color: var(--colorgris-color);
+    margin-bottom: 10px;
+}
+
+form{
+    border: 1px var(--colorgris-color);
+    border-radius: 10px;
+    border-style: solid;
+    width: 90%;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+form p{
+    margin: 10px 0;
+    color: var(--colorgris-color);
+}
+
+form a {
+    color: var(--colorgris-color);
+    text-decoration: underline;
+}
+
+input[type=submit]{
+    background-color: var(--grocdaurat-color);
+    width: 50px;
+    border-radius: 5px;
+    height: 20px;
+}
+
+input[type=submit]:hover{
+    background-color: var(--daurattrans-color);
+}
+
+input[type=checkbox]:checked, [type=radio]{
+    accent-color: var(--grisos-color);
+}
+
+input:focus{
+    outline: none;
+    box-shadow: 0px 0px 10px  var(--grocdaurat-color);
+}

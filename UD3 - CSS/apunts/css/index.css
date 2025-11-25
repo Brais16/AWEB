@@ -1,0 +1,40 @@
+/* Selector universal */
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+body{
+    background-color: rgb(216, 204, 188);
+    opacity: 0.9;
+
+}
+
+/* selector tipus id */
+/* #primerParagraf{
+    color: darkgoldenrod;
+} */
+
+/* selector tipus clase */
+.paragrafprimer{
+    color: darkgoldenrod;
+}
+
+/* Es pot aplicar a diferents etiquetas de la mateixa clase */
+.colorblau{
+    color: blue;
+}
+
+/* tots els h1 de header i tots els h2 de la pagina*/
+header h1, h2{
+    text-decoration: underline;
+}
+
+section#primeraSeccio p{
+    margin-left: 30px;
+}
+
+section.segonaSeccio p{
+
+    color: red;
+}

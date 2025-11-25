@@ -1,0 +1,49 @@
+/* Combinadors */
+/* 1. Descendent  */
+
+section p{
+    color: blue;
+}
+
+/* 2. Fill directe  */
+
+section > p{
+    color: red;
+}
+
+/* 3. Germà adjacent  */
+
+h2 + p { /* Tots els p despres un h2 */
+    text-decoration: underline;
+}
+
+/* 4. Qualsevol germà  */
+
+h2 ~ p{
+    font-style: italic;
+}
+
+/* Recordatori */
+
+/* Selector universal  */
+*{
+
+        font-family: sans-serif;
+        margin: 0;
+}
+
+main{
+    background-color: chocolate;
+}
+
+header{
+    background-color: darkcyan;
+    /* padding: 20px; */
+    height: 100px;
+    border: 1px solid black;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+}
+.negrita{
+    font-weight: bold;
+    background-color: aliceblue;
+    display: inline-block;
+}

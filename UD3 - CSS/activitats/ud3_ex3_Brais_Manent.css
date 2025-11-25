@@ -25,12 +25,20 @@ header img {
     margin-bottom: 10px;
 }
 
-a{
+header a{
+    margin: 0 15px;
     text-decoration: none;
     color: var(--verdoscur-color);
 }
-a:hover{
+
+header a:hover{
     color: var(--verdoscur-color);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a:hover{
+    color: var(--colorgris-color);
     font-weight: bold;
 }
 
@@ -44,6 +52,8 @@ h1, label, h3{
     color: var(--colorgris-color);
     margin-bottom: 10px;
 }
+
+
 
 form{
     border: 1px var(--colorgris-color);
@@ -69,18 +79,37 @@ input[type=submit]{
     background-color: var(--grocdaurat-color);
     width: 50px;
     border-radius: 5px;
-    height: 20px;
+    height: 30px;
+    border: none;
+    font-weight: bold;
+    color: var(--verdoscur-color);
 }
 
 input[type=submit]:hover{
     background-color: var(--daurattrans-color);
 }
 
-input[type=checkbox]:checked, [type=radio]{
+input[type=checkbox], [type=radio]{
     accent-color: var(--grisos-color);
 }
 
 input:focus{
     outline: none;
     box-shadow: 0px 0px 10px  var(--grocdaurat-color);
+}
+
+textarea{
+    resize: vertical;
+}
+textarea:focus{
+    outline: none;
+    box-shadow: 0px 0px 10px  var(--grocdaurat-color);
+
+}
+
+input[type="text"],
+input[type="email"] {
+    border: none;
+    padding: 5px;
+    width: 250px;
 }
